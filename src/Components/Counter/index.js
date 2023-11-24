@@ -26,12 +26,12 @@ function Counter({ count, text }) {
     useEffect(() => {
         // use effect hook to update the increment factor whenever the count prop changes
         setLimit(count); // update the limit state variable with the new count prop
-        setIncrement(Math.round(count / 60) || 1); // update the increment state variable with the new increment factor
+        setIncrement(Math.round(count / 40) || 1); // update the increment state variable with the new increment factor
     }, [count]); // run the effect whenever the count prop changes
 
     return (
         <div className="counter">
-            <h1>{current}+</h1> {/*  display the current count */}
+            <h1 style={{fontSize:"64px"}}>{current}+</h1> {/*  display the current count */}
             <p>{text}</p>
         </div>
     );

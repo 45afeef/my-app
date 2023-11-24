@@ -5,9 +5,19 @@
     float: left;
     margin-bottom: 30px;
     width: 100%;
-    color: #000;
+    color: var(--color);
     font-weight: 100;
     box-sizing: border-box;
+}
+
+.sectionTitle::after {
+    display: block;
+    content: '';
+    background-color: var(--color);
+    width: 25%;
+    height: 8px;
+    border-radius: 2px;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width:640px) {
