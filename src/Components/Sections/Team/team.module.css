@@ -1,0 +1,22 @@
+.section {
+    background-color: white;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.imageContainer {
+    min-width: 30%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    border: solid 10px white;
+
+}
+
+.imageContainer img {
+    width: 100%;
+}
